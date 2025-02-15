@@ -9,6 +9,6 @@ def my_circle():
 
 @pytest.fixture(scope= "module", autouse=True)
 def load_data():
-    with open (r"C:\Users\tanvi\PycharmProjects\pytestProject\tests\data.json", "r") as f:
+    with open (r"/Users/tanvinhossaine/Desktop/pytestcode/pytest/tests/data.json", "r") as f:
         data =json.load(f)
     return data
