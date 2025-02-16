@@ -4,6 +4,12 @@
 #
 #    pip-compile requirements.in
 #
+allure-pytest==2.13.5
+    # via -r requirements.in
+allure-python-commons==2.13.5
+    # via allure-pytest
+attrs==25.1.0
+    # via allure-python-commons
 blinker==1.9.0
     # via flask
 certifi==2025.1.31
@@ -29,9 +35,13 @@ markupsafe==3.0.2
 packaging==24.2
     # via pytest
 pluggy==1.5.0
-    # via pytest
+    # via
+    #   allure-python-commons
+    #   pytest
 pytest==8.3.4
-    # via -r requirements.in
+    # via
+    #   -r requirements.in
+    #   allure-pytest
 requests==2.32.3
     # via -r requirements.in
 urllib3==2.3.0
